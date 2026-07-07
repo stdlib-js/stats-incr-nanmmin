@@ -10,7 +10,7 @@
 
 ### Features
 
--   [`aa89fb3`](https://github.com/stdlib-js/stdlib/commit/aa89fb36f12f7e813ddec45082316115185eff89) - **lib:** added `stats/incr/nanmmin` package [(#5849)](https://github.com/stdlib-js/stdlib/pull/5849)
+-   [`aa89fb3`](https://github.com/stdlib-js/stdlib/commit/aa89fb36f12f7e813ddec45082316115185eff89) - add `stats/incr/nanmmin` [(#5849)](https://github.com/stdlib-js/stdlib/pull/5849)
 
 </section>
 
@@ -34,7 +34,8 @@ This release closes the following issue:
 
 <details>
 
--   [`aa89fb3`](https://github.com/stdlib-js/stdlib/commit/aa89fb36f12f7e813ddec45082316115185eff89) - **feat(lib):** added `stats/incr/nanmmin` package [(#5849)](https://github.com/stdlib-js/stdlib/pull/5849) _(by Jalaj Kumar, Philipp Burckhardt, stdlib-bot)_
+-   [`563772f`](https://github.com/stdlib-js/stdlib/commit/563772fc6b58f980db1bf0059a1b152b49867464) - **style:** wrap ternary conditions in parentheses [(#13352)](https://github.com/stdlib-js/stdlib/pull/13352) _(by Philipp Burckhardt)_
+-   [`aa89fb3`](https://github.com/stdlib-js/stdlib/commit/aa89fb36f12f7e813ddec45082316115185eff89) - **feat:** add `stats/incr/nanmmin` [(#5849)](https://github.com/stdlib-js/stdlib/pull/5849) _(by Jalaj Kumar, Philipp Burckhardt, stdlib-bot)_
 
 </details>
 
