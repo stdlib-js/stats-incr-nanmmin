@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2026 The Stdlib Authors.
@@ -16,16 +16,31 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
 
 /**
-* Compute a moving minimum incrementally, ignoring `NaN` values.
+* If provided a value, returns an updated minimum value; otherwise, returns the current minimum value.
 *
-* @module @stdlib/stats-incr-nanmmin
+* @param x - value
+* @returns minimum value
+*/
+type accumulator = ( x?: number ) => number | null;
+
+/**
+* Returns an accumulator function which incrementally computes a moving minimum value, ignoring `NaN` values.
+*
+* ## Notes
+*
+* -   The `W` parameter defines the number of values over which to compute the moving minimum.
+* -   As `W` values are needed to fill the window buffer, the first `W-1` returned values are calculated from smaller sample sizes. Until the window is full, each returned value is calculated from all provided values.
+*
+* @param W - window size
+* @throws must provide a positive integer
+* @returns accumulator function
 *
 * @example
-* var incrnanmmin = require( '@stdlib/stats-incr-nanmmin' );
-*
 * var accumulator = incrnanmmin( 3 );
 *
 * var m = accumulator();
@@ -49,12 +64,9 @@
 * m = accumulator();
 * // returns -5.0
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function incrnanmmin( W: number ): accumulator;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = incrnanmmin;
